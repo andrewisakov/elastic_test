@@ -1,7 +1,3 @@
-# BYM_elasticsearch
-BYM Test task
-
-
 # Python Test task
 - Create a Python based application with REST CRUD methods for such entities: category, product, order and orderItem. 
 - Category contains: name and a list of products. 
@@ -16,8 +12,8 @@ BYM Test task
 ==========================================================
 Technology stak: Python asyncio, aiohttp, elasticsearch-async, SQL-DB PostgreSQL (9.6), Elasticsearch
 
-$ git clone https://github.com/andrewisakov/BYM_elasticsearch
-$ cd BYM_elasticsearch
+$ git clone https://github.com/andrewisakov/elastic_test
+$ cd elastic_test
 $ pip install pipenv
 $ pipenv --python 3.6 (create venv)
 $ pipenv install (install requirements)
@@ -26,14 +22,14 @@ $ docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.el
 
 $ docker run -p 5432:5432 postgres:9.6 (or other method, or use exists)
 
-import setup/BYM.sql in postgres
+import setup/elastic_test.sql in postgres
 
 $ pipenv shell
 $ python main.py
 
 in other console:
 $ pipenv shell
-$ cd BYM_elasticsearch
+$ cd elastic_test
 $ tests.py
 $ python generate_data.py (generates order+items data)
 
