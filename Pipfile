@@ -1,0 +1,34 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+elasticsearch-async = "*"
+aiohttp = "*"
+aiopg = "*"
+sqlalchemy = "*"
+"aiohttp-jinja2" = "*"
+async-timeout = "*"
+"psycopg2-binary" = "*"
+decorator = "*"
+aiohttp-swagger = "*"
+
+
+[dev-packages]
+
+"autopep8" = "*"
+pydocstyle = "*"
+jedi = "*"
+xlrd = "*"
+pytest-aiohttp = "*"
+aiohttp-autoreload = "*"
+pylint = "*"
+
+
+[requires]
+
+python_version = "3.6"
